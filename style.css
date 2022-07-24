@@ -335,7 +335,6 @@ img {
 }
 
 .wrapper {
-    margin-left: 12vh;
     width: 100%;
     color: black;
 }
@@ -343,6 +342,8 @@ img {
 .cards_wrap {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
     color: black;
 }
 
