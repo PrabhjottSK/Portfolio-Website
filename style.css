@@ -1,16 +1,15 @@
-@import url('http://fonts.cdnfonts.com/css/microextendflf');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 *{
     margin: 0;
     padding: 0;
-    background-color: #bbbbbb;
-    font-family: 'MicroExtendFLF', sans-serif;
+    background-color: white;
+    font-family: 'Michroma', sans-serif;
     color: white;
 }
 
 html {
     scroll-behavior: smooth;
 }
-
 
 /* NAVIGATION BAR STYLING */
 
@@ -19,12 +18,12 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: black;
-    background-color: #bbbbbb;
+    color: white;
+    background-color: black;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 2px 5px 0 black;
+    box-shadow: 0 2px 5px 0 #c0192c;
 }
 
 .logo {
@@ -32,23 +31,23 @@ html {
     margin: 10px 10px;
     width: 150px;
     height: auto;
-    background-color: #bbbbbb;
+    background-color: black;
 }
 
 .navtabs {
     display: flex;
     list-style: none;
-    background-color: #bbbbbb;
+    background-color: white;
 }
 
 .navtabs a { 
     list-style: none;
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 25px;
     font-weight: 600;
     transition: color 0.2s;
-    background-color: #bbbbbb;
+    background-color: black;
 }
 
 .navtabs a:hover {
@@ -63,7 +62,7 @@ ul {
 .tabs {
     padding: 20px;
     cursor: pointer;
-    background-color: #bbbbbb;
+    background-color: black;
 }
 
 /* HOME STYLING */
@@ -126,6 +125,9 @@ ul {
     color: black;
 }
 
+/* 
+F1 Car Stuff
+
 .home .home-content .line-4 {
     width: 400px;
     height: auto;
@@ -150,7 +152,7 @@ ul {
     100% {
     transform: translateX(100vw);
     }
-}
+} */
 
 .home .home-content .line-5 {
     width: 100px;
@@ -413,3 +415,4 @@ img {
     padding-bottom: 20px;
     color: #c0192c;
 } */
+
