@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&display=swap');
 *{
     margin: 0;
     padding: 0;
     background-color: black;    
-    font-family: 'Michroma', sans-serif;
+    /* font-family: 'Michroma', sans-serif; */
+    font-family: 'Oswald', sans-serif;
     color: white;
 }
 
@@ -90,17 +92,18 @@ ul {
 .home .home-content .line-1 {
     background-color: transparent;
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
     color: black;
+    font-weight: 300;
 }
 
 .home .home-content .line-2 {
     background-color: transparent;
     position: relative;
     text-align: center;
-    font-size: 65px;
+    font-size: 85px;
     color: #c0192c;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .home .home-content .line-2 span {
@@ -120,9 +123,10 @@ ul {
 .home .home-content .line-3 {
     background-color: transparent;
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
     margin: 5px 0;
     color: black;
+    font-weight: 300;
 }
 
 /* 
@@ -298,11 +302,17 @@ F1 Car Stuff
     color: black;
 }
 
-.ico{
+.iconsv {
     color: black;
     transition: color 0.2s;
+    background-color: white;
+}
+
+.ico{
+    color: black;
     margin: 0 5px;
     font-size: 50px;
+    padding-right: 1vw;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
@@ -371,15 +381,9 @@ F1 Car Stuff
  
 .cards_wrap .card_top {
     min-height: 100px;
-    padding: 10px;
-    background-color: #bbbbbb;
+    background-color: #bbbbbb;  
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border-style: solid;
-    border-top-color: black;
-    border-bottom-color: #bbbbbb;
-    border-left-color: black;
-    border-right-color: black;
 }
 
 .cards_wrap .card_inner{
@@ -391,54 +395,62 @@ F1 Car Stuff
     background-color: #bbbbbb;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    border-style: solid;
-    border-bottom-color: black;
-    border-top-color: #bbbbbb;
-    border-left-color: black;
-    border-right-color: black;
-    
-
 }
 
-.cards_wrap .card_bottom .card_category {
+.cards_wrap .card_bottom .card_category{
     text-align: center;
     color: black;
+    background-color: #bbbbbb;
     border-radius: 10px;
-    border-style: solid;
-    border-color: #333333;
-    background-color: #dddddd;
+}
+
+.cards_wrap .card_bottom .card_category p{
+    text-align: center;
+    color: black;
+    background-color: #bbbbbb;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 .cards_wrap .card_bottom .card_info {
     padding: 15px;
     margin: 10px 0;
     color: black;
-    font-weight: bolder;
+    background-color: #bbbbbb;
     text-align: center;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: #333333;
-    background-color: #dddddd;
+}
+
+.ico2 {
+    color: black;
+    margin: 0 5px;
+    font-size: 25px;
+    text-align: center;
+    background-color: #bbbbbb;
+}
+
+.iconsv2 {
+    color: black;
+    transition: color 0.2s;
+    background-color: #bbbbbb;
 }
 
 .cards_wrap .card_bottom .card_info p {
     color: black;
 }
 
-.cards_wrap .card_bottom .card_info .title {
+.cards_wrap .card_bottom .card_info .title{
     color: #c0192c;
     font-size: 18px;
     margin-bottom: 5px;
     color: black;
-    font-weight: 600;
-    background-color: #dddddd;
+    font-weight: 300;
+    background-color: #bbbbbb;
 }
 
 .cards_wrap .card_item {
     width: 20%;
 }
   
-
 /* CONTACT STYLING */
 
 /* .contact {
@@ -468,23 +480,47 @@ F1 Car Stuff
 
 /* MOBILE RESPONSIVE STYLING  */
 
-@media (max-width: 575.98px) {
-    .home {
-        display: flex;
-        color: #FFF;
-        height: 100vh;
-        position: relative;
-        background-image: url(images/psk-bg.png);
-        background-size: cover; 
+@media (max-width: 600px) {
+
+    .logo {
+        width: 12vh;    
+    }
+
+    .navtabs a { 
+        font-size: 20px;
+        font-weight: 200;
+    }
+
+    .tabs {
+        padding: 10px;
+    }
+
+    .home .home-content .line-1 {
+        font-size: 15px;
     }
 
     .home .home-content .line-2 {
-        background-color: transparent;
-        position: relative;
-        text-align: center;
+        font-size: 29px;
+    }
+
+    .home .home-content .line-3 {
+        font-size: 15px;
+    }
+
+    .home .home-content .line-5 {
+        margin-top: 10vh;
+    }
+
+    .home .home-content .git {
         font-size: 30px;
-        color: #c0192c;
-        font-weight: 600;
+    }
+
+    .home .home-content .ldin {
+        font-size: 30px;
+    }
+
+    .home .home-content .mail {
+        font-size: 30px;
     }
 }
    
