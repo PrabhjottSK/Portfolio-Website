@@ -343,16 +343,17 @@ ul {
     padding: 20px;
     background-color: transparent;
     border-radius: 10px;
+    transition: transform .5s ease-in;
 }
 
 .cards_wrap .card_item:hover {
     transform: scale(1.1);
-    transition: transform .5s ease;
+    transition: transform .5s ease-out;
 }
  
 .cards_wrap .card_top {
     min-height: 100px;
-    background-color: #F7F7F7;  
+    background-color: #F6F6F6;  
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -363,7 +364,7 @@ ul {
 
 .cards_wrap .card_bottom {
     padding: 15px;
-    background-color: #F7F7F7;
+    background-color: #F6F6F6;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -371,14 +372,14 @@ ul {
 .cards_wrap .card_bottom .card_category{
     text-align: center;
     color: black;
-    background-color: #F7F7F7;
+    background-color: #F6F6F6;
     border-radius: 10px;
 }
 
 .cards_wrap .card_bottom .card_category p{
     text-align: center;
     color: black;
-    background-color: #F7F7F7;
+    background-color: #F6F6F6;
     font-weight: 400;
     font-size: 20px;
 }
@@ -387,7 +388,7 @@ ul {
     padding: 15px;
     margin: 10px 0;
     color: black;
-    background-color: #F7F7F7;
+    background-color: #F6F6F6;
     text-align: center;
 }
 
@@ -396,13 +397,13 @@ ul {
     margin: 0 5px;
     font-size: 25px;
     text-align: center;
-    background-color: #F7F7F7;
+    background-color: #F6F6F6;
 }
 
 .iconsv2 {
     color: black;
     transition: color 0.2s;
-    background-color: #F7F7F7;
+    background-color: #F6F6F6;
 }
 
 .cards_wrap .card_bottom .card_info p {
@@ -413,7 +414,7 @@ ul {
     font-size: 18px;
     font-weight: 300;
     color: black;
-    background-color: #F7F7F7;
+    background-color: #F6F6F6;
     height: 10vw;
 }
 
@@ -470,7 +471,7 @@ ul {
         color: #FFF;
         height: 100vh;
         position: relative;
-        background: url(images/city1-blur.png) repeat fixed 100%;
+        background: url(images/city1-blur.png);
         background-size: cover; 
         background-position-x: 40%;
     }
