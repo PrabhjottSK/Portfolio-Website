@@ -1,10 +1,8 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600&display=swap');
 *{
     margin: 0;
     padding: 0;
     background-color: black;    
-    /* font-family: 'Michroma', sans-serif; */
     font-family: 'Oswald', sans-serif;
     color: white;
 }
@@ -20,11 +18,11 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
+    background-color: #151F2D;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 2px 5px 0 #c0192c;
+    box-shadow: 2px 2px white;
 }
 
 .logo {
@@ -32,7 +30,7 @@ html {
     margin: 10px 10px;
     width: 120px;
     height: auto;
-    background-color: black;
+    background-color: #151F2D;
 }
 
 .navtabs {
@@ -47,11 +45,11 @@ html {
     font-weight: 600;
     transition: color 0.2s;
     color: white;
-    background-color: black;
+    background-color: #151F2D;
 }
 
 .navtabs a:hover {
-    color: #c0192c;
+    color: #2E3B4B;
 }
 
 ul {
@@ -62,7 +60,7 @@ ul {
 .tabs {
     padding: 20px;
     cursor: pointer;
-    background-color: black;
+    background-color: #151F2D;
 }
 
 /* HOME STYLING */
@@ -72,7 +70,7 @@ ul {
     color: #FFF;
     height: 100vh;
     position: relative;
-    background-image: url(images/psk-bg.png);
+    background: url(images/city1-blur.png) repeat fixed 100%;
     background-size: cover; 
 }
 
@@ -92,9 +90,10 @@ ul {
 .home .home-content .line-1 {
     background-color: transparent;
     text-align: center;
-    font-size: 35px;
-    color: black;
+    font-size: 30px;
     font-weight: 300;
+    letter-spacing: 5px;
+    color: white;
 }
 
 .home .home-content .line-2 {
@@ -102,8 +101,8 @@ ul {
     position: relative;
     text-align: center;
     font-size: 85px;
-    color: #c0192c;
     font-weight: 400;
+    color: white;
 }
 
 .home .home-content .line-2 span {
@@ -111,7 +110,7 @@ ul {
     display: inline-block;
     animation: flip 2s infinite;
     animation-delay: calc(.2s * var(--i));
-    color: #c0192c;
+    color: white;
 }
 
 @keyframes flip {
@@ -123,51 +122,23 @@ ul {
 .home .home-content .line-3 {
     background-color: transparent;
     text-align: center;
-    font-size: 35px;
-    margin: 5px 0;
-    color: black;
+    font-size: 30px;
     font-weight: 300;
+    letter-spacing: 5px;
+    color: white;
 }
-
-/* 
-F1 Car Stuff
 
 .home .home-content .line-4 {
-    width: 400px;
-    height: auto;
-    margin-top: 75px;
-    display: inline-block;
-    transform: translateX(-120%);
-    animation-name: speed;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-}
 
-@keyframes speed {
-    0% {
-    transform: translateX(-100%);
-    }
-    25% {
-    transform: translateX(10vw);
-    }
-    75% {
-    transform: translateX(10vw);
-    }
-    100% {
-    transform: translateX(100vw);
-    }
-} */
-
-.home .home-content .line-5 {
-    width: 50px;
-    height: auto;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20vh;
+    margin-top: 10vh;
     -webkit-animation: button .5s infinite  alternate;
     animation: button .5s infinite  alternate;
     background-color: transparent;
+    font-size: 50px;
+    color: white;
 }
 
 @-webkit-keyframes button {
@@ -193,6 +164,7 @@ F1 Car Stuff
     margin-left: auto;
     margin-right: auto;
     background-color: transparent;
+    color: white;
 }
 
 .home .home-content .ldin {
@@ -203,6 +175,7 @@ F1 Car Stuff
     margin-left: auto;
     margin-right: auto;
     background-color: transparent;
+    color: white;
 }
 
 .home .home-content .mail {
@@ -213,20 +186,20 @@ F1 Car Stuff
     margin-left: auto;
     margin-right: auto;
     background-color: transparent;
+    color: white;
 }
 
 .home .home-content .git:hover {
-    color: #c0192c;
+    color: #2E3B4B;
 }
 
 .home .home-content .ldin:hover {
-    color: #c0192c;
+    color: #2E3B4B;
 }
 
 .home .home-content .mail:hover {
-    color: #c0192c;
+    color: #2E3B4B;
 }
-
 
 /* ABOUT STYLING */
 
@@ -251,7 +224,7 @@ F1 Car Stuff
     text-align: center;
     font-size: 30px;
     font-weight: 600;
-    color: #c0192c;
+    color: #2E3B4B;
     background-color: white;
 }
 
@@ -288,7 +261,7 @@ F1 Car Stuff
 }
 
 .about .about-page .right a:hover{
-    color: #c0192c; 
+    color: #2E3B4B; 
 }
 
 .bottom { 
@@ -322,10 +295,8 @@ F1 Car Stuff
 
 .projects {
     height: 100vh;
-    /* background-color: #333333; */
     position: relative;
-    background-image: url(images/psk-bg-inverse.png);
-    background-size: cover; 
+    background-color: #EBEBEB;
 }
 
 .adjust-scroll {
@@ -341,7 +312,7 @@ F1 Car Stuff
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 5vh;
-    color: #c0192c;
+    color: #2E3B4B;
     background-color: transparent;
 }
 
@@ -381,7 +352,7 @@ F1 Car Stuff
  
 .cards_wrap .card_top {
     min-height: 100px;
-    background-color: #bbbbbb;  
+    background-color: #F7F7F7;  
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -392,7 +363,7 @@ F1 Car Stuff
 
 .cards_wrap .card_bottom {
     padding: 15px;
-    background-color: #bbbbbb;
+    background-color: #F7F7F7;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -400,14 +371,14 @@ F1 Car Stuff
 .cards_wrap .card_bottom .card_category{
     text-align: center;
     color: black;
-    background-color: #bbbbbb;
+    background-color: #F7F7F7;
     border-radius: 10px;
 }
 
 .cards_wrap .card_bottom .card_category p{
     text-align: center;
     color: black;
-    background-color: #bbbbbb;
+    background-color: #F7F7F7;
     font-weight: 400;
     font-size: 20px;
 }
@@ -416,7 +387,7 @@ F1 Car Stuff
     padding: 15px;
     margin: 10px 0;
     color: black;
-    background-color: #bbbbbb;
+    background-color: #F7F7F7;
     text-align: center;
 }
 
@@ -425,13 +396,13 @@ F1 Car Stuff
     margin: 0 5px;
     font-size: 25px;
     text-align: center;
-    background-color: #bbbbbb;
+    background-color: #F7F7F7;
 }
 
 .iconsv2 {
     color: black;
     transition: color 0.2s;
-    background-color: #bbbbbb;
+    background-color: #F7F7F7;
 }
 
 .cards_wrap .card_bottom .card_info p {
@@ -439,12 +410,11 @@ F1 Car Stuff
 }
 
 .cards_wrap .card_bottom .card_info .title{
-    color: #c0192c;
     font-size: 18px;
-    margin-bottom: 5px;
-    color: black;
     font-weight: 300;
-    background-color: #bbbbbb;
+    color: black;
+    background-color: #F7F7F7;
+    height: 10vw;
 }
 
 .cards_wrap .card_item {
@@ -455,7 +425,7 @@ F1 Car Stuff
 
 /* .contact {
     height: 25vh;
-    box-shadow: 0 1px 20px 0 #c0192c;
+    box-shadow: 0 1px 20px 0 #2E3B4B;
     position: relative;
     background-image: url(images/contact-bgrd.png);
     background-size: cover; 
@@ -469,7 +439,7 @@ F1 Car Stuff
     text-align: center;
     font-size: 30px;
     font-weight: 600;
-    color: #c0192c;
+    color: #2E3B4B;
     background-color: transparent;
 }
 
@@ -495,19 +465,33 @@ F1 Car Stuff
         padding: 10px;
     }
 
+    .home {
+        display: flex;
+        color: #FFF;
+        height: 100vh;
+        position: relative;
+        background: url(images/city1-blur.png) repeat fixed 100%;
+        background-size: cover; 
+        background-position-x: 40%;
+    }
+
     .home .home-content .line-1 {
         font-size: 15px;
+        letter-spacing: 0px;
+        padding-bottom: 1vh;
     }
 
     .home .home-content .line-2 {
-        font-size: 29px;
+        font-size: 30px;
+        padding-bottom: 1vh;
     }
 
     .home .home-content .line-3 {
         font-size: 15px;
+        letter-spacing: 0px;    
     }
 
-    .home .home-content .line-5 {
+    .home .home-content .line-4 {
         margin-top: 10vh;
     }
 
