@@ -206,91 +206,129 @@ ul {
 
 .about {
     height: 100vh;
-    background-color: white;
+    background: url(images/about-bgrd.png);
+    background-size: cover; 
+    position: relative;
+}
+
+.about .max-width{
+    background-color: transparent;
 }
 
 .adjust-scroll {
     padding-top: 10vh;
-    background-color: white;
+    background-color: transparent;
 }
 
 .about .about-page {
     display: flex;
     width: 100%;
     justify-content: center;
-    background-color: white;
+    background-color: transparent;
 }
 
-.about .header {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-    color: #2E3B4B;
-    background-color: white;
+.left {
+    margin-top: 12vh;
+    margin-right: 15vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .about-page .left .pic{
+    height: 25vh;
+    width: 25vh;
+    background-color: transparent;
+    border: solid 1px;
+    border-radius: 50%;
+    border-color: #151F2D;
+    margin-bottom: 1vh;
+}
+
+.detail {
+    background-color: transparent;
+    color:#151F2D;     
+    font-weight: 10;
+}
+
+.icon1{
+    background-color: transparent;
+    color: #151F2D;
+    margin-right: .5vw;
+}
+
+.bullet{
+    align-items: center;
+    display: flex;
+    background-color: transparent;
+    flex-direction: column;
+}
+
+.wrapper {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.button{
+    background-color: transparent;
+    color: #151F2D;
+    margin-top: 1vh;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.left .button .req{
+    text-decoration: none;
+    color: #151F2D;
+    background-color: transparent;
 }
 
 .about .about-page .right {
     width: 50%;
-    padding-top: 0vh;
-    background-color: white;
-}
-
-.req {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-right: 100px;
-    background-color: white;
+    background-color: transparent;
+    margin-top: 20vh;
 }
 
 .about .about-page .right p{
     color: black;
     font-size: 20px;
-    font-weight: 500;
-    text-align: center;
-    background-color: white;
-}
-
-.about .about-page .right a{
-    display: flex;
-    color: black;
-    font-size: 20px;
-    font-weight: 900;
-    text-decoration: none;
-    transition: color 0.2s;
-    background-color: white;
-}
-
-.about .about-page .right a:hover{
-    color: #2E3B4B; 
-}
-
-.bottom { 
-    text-align: center;
-    font-size: 25px;
-    color: black;
-    background-color: white;
-}
-
-.bottom p{ 
-    color: black;
+    font-weight: 200;
+    background-color: transparent;
 }
 
 .iconsv {
     color: black;
     transition: color 0.2s;
-    background-color: white;
+    background-color: transparent;
+}
+
+.tech-stack .iconsv {
+    padding-right: .5vh;
+    color: black;
+    transition: color 0.2s;
+    background-color: transparent;
 }
 
 .ico{
     color: black;
     margin: 0 5px;
-    font-size: 50px;
+    font-size: 20px;
     padding-right: 1vw;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
+    background-color: transparent;
 }
+
+.tech-stack {
+    margin-top: 1vh;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+}
+
 
 /* PROJECTS STYLING */
 
@@ -298,6 +336,8 @@ ul {
     height: 100vh;
     position: relative;
     background-color: #EBEBEB;
+    background: url(images/projects-bgrd.png);
+    background-size: cover; 
 }
 
 .adjust-scroll {
@@ -310,8 +350,9 @@ ul {
 
 .projects .header {
     text-align: center;
+    letter-spacing: 10px;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 5vh;
     color: #2E3B4B;
     background-color: transparent;
@@ -422,6 +463,7 @@ ul {
 .cards_wrap .card_item {
     width: 20%;
 }
+
   
 /* CONTACT STYLING */
 
@@ -469,6 +511,7 @@ ul {
         padding: 10px;
     }
 
+
     /* HOME MOBILE STYLING */
 
     .home {
@@ -511,6 +554,95 @@ ul {
 
     .home .home-content .mail {
         font-size: 30px;
+    }
+
+
+    /* ABOUT MOBILE STYLING */
+
+    .about {
+        height: 100vh;
+        background: url(images/about-bgrd.png); 
+        position: relative;
+    }
+
+    .left {
+        margin-top: 0vh;
+        margin-right: 2vh;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about .about-page .left .pic{
+        height: 10vh;
+        width: 10vh;
+        background-color: transparent;
+        border: solid 1px;
+        border-radius: 50%;
+        border-color: #151F2D;
+        margin-bottom: 1vh;
+    }
+    
+    .detail {
+        background-color: transparent;
+        color:#151F2D;     
+        font-weight: 10;
+    }
+    
+    .icon1{
+        background-color: transparent;
+        color: #151F2D;
+        margin-right: .5vw;
+    }
+    
+    .bullet{
+        align-items: center;
+        display: flex;
+        background-color: transparent;
+        flex-direction: column;
+    }
+    
+    .wrapper {
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+    }
+    
+    .button{
+        background-color: transparent;
+        color: #151F2D;
+        margin-top: 1vh;
+        font-size: 15px;
+        font-weight: 900;
+    }
+    
+    .left .button .req{
+        text-decoration: none;
+        color: #151F2D;
+        background-color: transparent;
+    }
+    
+    .about .about-page .right {
+        width: 50%;
+        background-color: transparent;
+        margin-top: 5vh;
+    }
+    
+    .about .about-page .right p{
+        color: black;
+        font-size: 15px;
+        font-weight: 200;
+        background-color: transparent;
+    }
+
+    .tech-stack .iconsv {
+        width: 3vh;
+        height: auto;
+        padding-right: 1vh;
+        color: black;
+        background-color: transparent;
     }
 
 
@@ -576,7 +708,299 @@ ul {
         transform: scale(0);
         transition: none;
     }
+
+    .cards_wrap .card_top {
+        min-height: 50px;
+        background-color: #F6F6F6;  
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .cards_wrap .card_inner{
+        background-color: transparent;
+    }
+
+    .cards_wrap .card_bottom {
+        padding: 5px;
+        background-color: #F6F6F6;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .cards_wrap .card_bottom .card_category{
+        text-align: center;
+        color: black;
+        background-color: #F6F6F6;
+        border-radius: 10px;
+    }
+
+    .cards_wrap .card_bottom .card_category p{
+        text-align: center;
+        color: black;
+        background-color: #F6F6F6;
+        font-weight: 400;
+        font-size: 10px;
+    }
+
+    .cards_wrap .card_bottom .card_info {
+        padding: 0px;
+        margin: 10px 0;
+        color: black;
+        background-color: #F6F6F6;
+        text-align: center;
+    }
+
+    .cards_wrap .card_bottom .card_info .title {
+        margin-bottom: 4vh;
+    }
+
+    .ico2 {
+        color: black;
+        margin: 0 5px;
+        font-size: 15px;
+        text-align: center;
+        background-color: #F6F6F6;
+    }
+
+    .iconsv2 {
+        color: black;
+        transition: color 0.2s;
+        background-color: #F6F6F6;
+    }
+
+    .cards_wrap .card_bottom .card_info p {
+        color: black;
+    }
+
+    .cards_wrap .card_bottom .card_info .title{
+        font-size: 12px;
+        font-weight: 300;
+        color: black;
+        background-color: #F6F6F6;
+        height: 10vw;
+    }
+
+    .cards_wrap .card_item {
+        width: 70%;
+    }
+}
+
+
+/* TABLETS RESPONSIVE STYLING */
+@media (max-width: 900px) {
+
+    .logo {
+        width: 12vh;    
+    }
+
+    .navtabs a { 
+        font-size: 20px;
+        font-weight: 200;
+        letter-spacing: 0px;
+    }
+
+    .tabs {
+        padding: 10px;
+    }
+
+
+    /* HOME TABLET STYLING */
+
+    .home {
+        display: flex;
+        color: #FFF;
+        height: 100vh;
+        position: relative;
+        background: url(images/city1-blur.png);
+        background-size: cover; 
+        background-position-x: 40%;
+    }
+
+    .home .home-content .line-1 {
+        font-size: 15px;
+        letter-spacing: 0px;
+        padding-bottom: 1vh;
+    }
+
+    .home .home-content .line-2 {
+        font-size: 30px;
+        padding-bottom: 1vh;
+    }
+
+    .home .home-content .line-3 {
+        font-size: 15px;
+        letter-spacing: 0px;    
+    }
+
+    .home .home-content .line-4 {
+        margin-top: 10vh;
+    }
+
+    .home .home-content .git {
+        font-size: 30px;
+    }
+
+    .home .home-content .ldin {
+        font-size: 30px;
+    }
+
+    .home .home-content .mail {
+        font-size: 30px;
+    }
+
+
+    /* ABOUT TABLET STYLING */
+
+    .about {
+        height: 100vh;
+        background: url(images/about-bgrd.png); 
+        position: relative;
+    }
+
+    .left {
+        margin-top: 0vh;
+        margin-right: 2vh;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     
+    .about .about-page .left .pic{
+        height: 10vh;
+        width: 10vh;
+        background-color: transparent;
+        border: solid 1px;
+        border-radius: 50%;
+        border-color: #151F2D;
+        margin-bottom: 1vh;
+    }
+    
+    .detail {
+        background-color: transparent;
+        color:#151F2D;     
+        font-weight: 10;
+    }
+    
+    .icon1{
+        background-color: transparent;
+        color: #151F2D;
+        margin-right: .5vw;
+    }
+    
+    .bullet{
+        align-items: center;
+        display: flex;
+        background-color: transparent;
+        flex-direction: column;
+    }
+    
+    .wrapper {
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+    }
+    
+    .button{
+        background-color: transparent;
+        color: #151F2D;
+        margin-top: 1vh;
+        font-size: 15px;
+        font-weight: 900;
+    }
+    
+    .left .button .req{
+        text-decoration: none;
+        color: #151F2D;
+        background-color: transparent;
+    }
+    
+    .about .about-page .right {
+        width: 50%;
+        background-color: transparent;
+        margin-top: 5vh;
+    }
+    
+    .about .about-page .right p{
+        color: black;
+        font-size: 15px;
+        font-weight: 200;
+        background-color: transparent;
+    }
+
+    .tech-stack .iconsv {
+        width: 3vh;
+        height: auto;
+        padding-right: 1vh;
+        color: black;
+        background-color: transparent;
+    }
+
+
+    /* PROJECTS TABLET STYLING */
+
+    .projects {
+        height: 175vh;
+        position: relative;
+        background-color: #EBEBEB;
+    }
+
+    .adjust-scroll {
+        padding-top: 10vh;
+    }
+
+    .projects .max-width{
+        background-color: transparent;
+    }
+
+    .projects .header {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 1vh;
+        color: #2E3B4B;
+        background-color: transparent;
+    }
+
+    .projects img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .wrapper {
+        width: 100%;
+        color: black;
+        background-color: transparent;
+    }
+
+    .cards_wrap {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        color: black;
+        background-color: transparent;
+    }
+
+    .cards_wrap .card_item {
+        height: 50vw;
+        width: 100vw;
+        margin-bottom: 20vh;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        background-color: transparent;
+        border-radius: 10px;
+        transition: none;
+    }
+
+    .cards_wrap .card_item:hover {
+        transform: scale(0);
+        transition: none;
+    }
+
     .cards_wrap .card_top {
         min-height: 50px;
         background-color: #F6F6F6;  
